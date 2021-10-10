@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body
+	{
+		background-color: #F1F3F6;
+	}
+	@font-face
+     {
+     	src:url("f2.ttf");
+     	font-family: f2;
+     }
+		.div1
+		{
+			height:530px; 
+			width:850px;
+			background-color: #fff;
+			position: absolute;
+			top:7%;
+			left:17%;
+      box-shadow: 4px 7px 10px black;
+			
+		}
+		.div2
+		{
+			height:530px;
+			width: 340px;
+			background-color: #00AEB8;
+		    margin-top: -522px;
+			position: relative;
+		}
+        h1
+        {
+        	font-size: 50px;
+        	font-family: f2;
+        	color: #fff;
+        	position: relative;
+        }
+        .div2 img
+        {
+        	height: 344px;
+        	width: 340px;
+        }
+        input
+        {
+         margin-left:396px;
+         position: relative;
+         margin-top: -9px;
+         width: 433px;
+         height: 30px;	
+        }
+        h2
+        {
+        margin-left:396px;
+         position: relative;
+         margin-top: 26px;
+         color:#2B8080; 
+         font-family: f2;	
+        }
+        .button
+        {
+           width: 433px;
+         height: 35px;	
+         margin-left: 400px;
+         margin-top: 19px;
+         background-color:#00AEB8; 
+         color: #fff;
+         border-style: none;
+         font-size: 20px;
+         font-family: f2;
+         border:none;
+        }
+        .b2
+        {
+         width: 433px;
+         height: 35px;	
+         margin-left: 400px;
+         margin-top: 3px;
+         border-style: none;
+        }
+        h4
+        {
+        	margin-left: 604px;
+        }
+        h5
+        {
+          margin-left:484px;
+          margin-top: 87px;
+          font-size: 22px;
+          font-family: f2;
+        } 
+        .link 
+        {
+          text-decoration:none;
+        }
+        .in
+        {
+         margin-left:396px;
+         position: relative;
+         margin-top: -9px;
+         width: 433px;
+         height: 30px;  
+        } 
+            .button1
+        {
+           width: 433px;
+         height: 35px;  
+         margin-left: 400px;
+         margin-top: 19px;
+         background-color:#00AEB8; 
+         color: #fff;
+         border-style: none;
+         font-size: 20px;
+         font-family: f2;
+         border:none;
+       }
+             
+	</style>
+</head>
+<body>
+  <form method="post" action="page1.php">
+  <div class="div1">
+  	 <h2 class="h2">Enter email/mobile number</h2>
+  	 <input type="email" name="name" autocomplete="off" placeholder="Enter mail/mobile number" required/>
+  	 <h2 class="h2">Password</h2>
+  	 <input type="Password" name="Password" placeholder="Password...." id="name1" ><br><br><label id="lable1" style="display:none;font-size: 23px; color: red; margin-top: -34px; margin-left: 14px;
+    ">Invalide.....</label>
+  	 <input type="submit" value="login" class="button" >
+   </form>   
+  	 <h4>or</h4>
+    <button class="button1">Request OTP</button>
+     <a href="creatnew.html" class="link"><h5>New to Petcircle? Create an account</h5></a>
+  	<div class="div2">
+  		<h1>Login</h1>
+  		<img src="images/pet1.png">
+    </div>
+  	
+  	</div>
+  </div>
+    <script>
+        var myname=document.getElementById('name1');
+
+        function val()
+        {
+          if(myname.value.trim()=="")
+          {
+  
+            myname.style.border="3px solid red";
+            
+            document.getElementById("lable1").style.display="block";
+            return false;
+          }
+          else
+          {
+            return true;
+          }
+        } 
+        
+      </script>
+   
+  </script>
+</body>
+</html>

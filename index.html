@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>PETSHOP</title>
+	<style type="text/css">
+     *
+     {
+     	margin: 0px;
+     	padding: 0px;
+     }
+     @font-face
+     {
+     	src:url("f2.ttf");
+     	font-family: f2;
+     }
+     @font-face
+     {
+     	src:url("font1.ttf");
+     	font-family: font1;
+     }
+     header
+     {
+     	background-color:#00B1B9;
+     	margin: 0px;
+     	height:84px;
+     	width: 100%;
+     	position: relative; 
+     }
+     header img
+     {
+       height: 80px;
+       width: 80px;
+       margin-left:20px;
+       margin-bottom:-59px;	
+     }
+
+     ul
+     {
+     	       display: flex;
+     	       margin: 0px;
+     	       padding:0px;
+     	       list-style: none;
+     	       height: 38px;
+     	       width: 100%;
+     }
+     ul li
+     {
+     	flex:auto;
+     	background-color:#2B8080;
+     
+       }
+      ul li a
+      {
+ 		text-decoration:none; 
+ 		line-height: 39px;	
+ 		font-size: 22px;
+ 		font-family:f2;
+ 		color: #fff;
+        }
+      img
+      {
+      	height:120px;
+      	width:100%;
+      	margin:0px;
+      }
+      .container
+      {
+      	height: 3000px;
+      	width: 100%;
+      }
+      .d1
+      {
+      	height: 64px;
+      	width: 393px;
+      	margin:10px;
+      	background-color:#00B1B9;
+      	float: left;
+      	border-radius: 3px;
+      	position: relative;
+        font-family: f2;
+      }
+      .d1 a
+      {
+        text-decoration:none;
+        color: #fff;
+      }  
+          .d2
+      {
+      	height: 64px;
+      	width: 393px;
+      	margin:10px;
+      	background-color:#00B1B9;
+      	float: left;
+      	border-radius: 3px;
+        font-family: f2;
+
+      }
+      .d3
+      {
+      	height: 64px;
+      	width: 413px;
+      	margin:10px;
+      	float: left;
+      	border-radius: 3px;
+      	border: 1px solid black;
+        font-family: f2;
+      }
+      .d4
+      {
+      	height: 64px;
+      	width: 393px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d5
+      {
+      	height: 64px;
+      	width: 393px;
+      	margin:10px;
+        font-family: f2;
+
+      	float: left;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d6
+      {
+      	height: 64px;
+      	width: 194px;
+      	margin:10px;
+        font-family: f2;
+      	float: left;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d7
+      {
+      	height: 64px;
+      	width: 194px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d8
+      {
+      	height: 64px;
+      	width: 393px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d9
+      {
+      	height: 64px;
+      	width: 393px;
+        font-family: f2;
+      	margin:10px;
+      	float: left;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d10
+      {
+      	height: 64px;
+      	width: 194px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d11
+      {
+      	height: 64px;
+      	width: 194px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d12
+      {
+      	height: 64px;
+      	width: 1240px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d13
+      {
+      	height: 64px;
+      	width: 605px;
+      	margin:10px;
+      	float: left;
+        font-family: f2;
+      	border-radius: 3px;
+      	border: 1px solid black;
+      }
+      .d1 p
+      {
+      	padding: 20px;
+      	color: #fff;
+      	font-size:22px;
+      } 
+      .d2 p
+      {
+      	padding: 20px;
+      	color: #fff;
+      	font-size:22px;
+      } 
+      .d3 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d4 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d5 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d6 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d7 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d8 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d9 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d10 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d11 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d12 p
+      {
+      	padding: 20px;
+      	color: #00B1B9;
+      	font-size:58px;
+        text-align: center;
+        margin-top: -28px;
+      } 
+      .d13 p
+      {
+      	padding: 20px;
+      	color: #000;
+      	font-size:22px;
+      } 
+      .d1 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d2 img
+      {
+        height:80px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-36px;
+      	position: relative;
+      }
+       .d3 img
+      {
+         height:84px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d4 img
+      {
+        height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d5 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-30px;
+      	position: relative;
+      }
+      .d6 img
+      {
+         height:66px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-47px;
+      	position: relative;
+      	margin-left:10px; 
+      }
+      .d7 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d8 img
+      {
+         height:69px;
+      	width:58px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-26px;
+      	position: relative;
+      }
+      .d9 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d10 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d11 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      .d12 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+      	position: relative;
+      }
+      .d13 img
+      {
+         height:75px;
+      	width:75px;
+      	float: right;
+      	margin-bottom: 10px;
+        margin-top:-32px;
+      	position: relative;
+      }
+      h1
+      {
+       font-family: font1;
+      text-align:center;
+      color: #333;
+      }
+      .items
+      {
+      	height:125px;
+      	width:123px;
+      }
+      .db1
+      {
+      	height:125px;
+      	width:123px;
+      	float: left;
+      	margin: 64px;
+      }
+      .db1 p
+      {
+      	text-align:center;
+      	font-family: f2; 
+      	font-size:20px;
+      }
+       .im1 img
+       {
+       	height:95px;
+       	width:740px;
+        margin-left: 260px;
+        margin-top:10px;
+       }
+       
+      
+       .div1 img
+       {
+        float:left; 
+        height: 309px;
+       	width: 309px;
+       	margin-top:30px;
+       	border-radius:3px;
+       	border-radius:77px;
+       }
+       .div1 p
+       {
+       	text-indent: 15px;
+       	letter-spacing: 2px;
+       	size: 30px;
+       	margin-left: 350px;
+       	font-family: f2;
+       	text-align: justify;
+       	margin-top: 20px;
+       	
+       }
+       .div1 h1
+       {
+       	margin-top: 50px;
+       }
+       .end
+       {
+       	height: 200px;
+       	width: 100%;
+       	background-color: #E5E5E5;
+       	margin-top: 50px;
+       	position: absolute;
+       }
+       .end h3
+       {
+       	padding-top:15px;
+       	padding-left: 15px;
+       	font-size: 40px; 
+       }
+       .end p 
+       {
+        padding-left:15px;
+        padding-top: 5px;
+        font-size: 15px;
+       }
+       input
+       {
+       	margin: 15px;
+       	width: 600px;
+       	height: 40px;
+       	padding-left: 20px;
+       	size: 22px;
+       	border: 4px solid #00B1B9;
+       	border-radius: 30px;
+       	background-image: url("images/se.png");
+	    background-size: 20px;
+	    background-repeat: no-repeat;
+		background-position: right;
+       }
+       .box
+       {
+       	width: 100px;
+       	height: 40px;
+       	background-color:#00B1B9;
+       	color: #fff;
+       	border-radius: 4px; 
+       	border: none;
+       }
+       .end .fi
+       {
+       	height:100px;
+       	width:210px;
+       	float: right;
+       	margin-bottom: 50px;
+       	margin-left: 50px;
+       	padding:0px;
+       }
+       .end1
+       {
+       	height:440px; 
+       	width:100%;
+       	display: flex;	
+       	background-color:#01ABB8;
+       }
+       .end2
+       {
+       	margin: 70px;
+       }
+       .end2 ul 
+       {
+       	flex-direction: column;
+       	margin: 10px;
+       
+       }
+       .end2 ul li
+       {
+       	    
+       		background-color:#01ABB8;
+       		font-size: 22px;
+       		font-family: f2;
+       		float: left;
+       }
+       .end2 h4
+       {
+       	font-family: font1;
+       	font-size:22px;
+       }
+       .in
+       {
+       	margin-top:24px;
+       	width: 600px;
+       	height: 40px;
+       	border: 4px solid #00B1B9;
+       	border-radius: 30px;
+       	background-image: url("images/se.png");
+	    background-size: 20px;
+	    position: absolute;
+	    padding-left: 20px;
+	    background-repeat: no-repeat;
+		background-position: right;
+		border: none;
+       }
+       .bg1
+       {
+       	height: 600px;
+       	width: 97%;
+       	margin-left:1.5%;
+       	margin-top: 10px;
+       	margin-bottom: 10px;
+       	margin-right: 10px;
+       	border-radius:50px;
+       }
+       .endi
+       {
+       	height:auto; 
+       	width:100%;
+       	float: left;
+       	position: relative;
+
+       }	
+       .endi img
+       {
+       		width: auto;
+       		height: auto;
+       		margin-top:119px;
+       		margin-left: 15px; 
+       }
+       ul li ul li
+    {
+      display: none;
+    }
+    ul li:hover ul li
+    {
+      display: block;
+      }
+      ul li :hover ul li {
+      height:200px;
+       }
+       .a1 img
+       {
+        float: right;
+        padding-right:4px;
+        font-size: 50px;
+        margin-top: -21px;
+        margin-right: 42px;
+        position: relative;
+        color: #fff;
+       }
+   
+    ul li a:hover     
+    {
+      background-color: #fff;
+       color:#00B1B9;
+       display: block;
+
+    }
+    
+    .d1 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+     .d2 :hover img
+    {
+      height:85px; 
+      width:80px;
+    }
+    .d3 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d4 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d5 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d6 :hover img
+    {
+      height:70px; 
+      width:80px;
+    }
+    .d7 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d8 :hover img
+    {
+      height:80px; 
+      width:80px;
+    } 
+    .d9 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d10 :hover img
+    {
+      height:80px; 
+      width:80px;
+    } 
+    .d11 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d12 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+    .d13 :hover img
+    {
+      height:80px; 
+      width:80px;
+    }
+     
+</style>
+</head>
+
+
+<body>
+	<header><img src="images/pet1.png"><input type="text" name="name" placeholder="Search........" class="in"><a href="cart.html">
+    <p class="a1"><img src="images/kiran2.png"></p></header></a>
+		<ul>
+			<li><a href="index.html"> Home</a></li>
+			<li><a href="Sale.html" >Sale</a></li>
+			<li><a href="dogsale.html">Dogs</a></li>
+			<li><a href="Catsale.html">Cats</a></li>
+			<li><a href="fishsale.html">Fishs</a></li>
+			<li><a href="Rabbitsale.html">Rabbits</a></li>
+			<li><a href="Contect us.html">Contect us</a></li>
+		</ul>
+		<img src="images/vel1.jpg">
+
+
+    
+		<div class="container">
+			<a href="dogsale.html"><div class="d1">
+				<p>Dogs<img src="images/dv1.png"></p>
+			</div></a>
+			<a href="catsale.html"><div class="d2">
+				<p>Cats<img src="images/vd2.png"></p>
+			</div></a>
+			<a href="fishsale.html"><div class="d3">
+				<p>Fish<img src="images/dv3.png"></p>
+			</div></a>
+			<a href="foodsale.html"><div class="d4">
+				<p>Foods<img src="images/dv4.png"></p>
+			</div></a>
+			<a href="foodsale1.html"><div class="d5">
+				<p>Foods<img src="images/dv5.png"></p>
+			</div></a>
+			<a href="Rabbitsale.html"><div class="d6">
+	            <p>Small Pets<img src="images/dv6.png"></p>
+			</div></a>
+			<a href="birds.html"><div class="d7">
+				<p>Birds<img src="images/dv7.png"></p>
+			</div></a>
+			<a href="catsale.html"><div class="d8">
+				<p>Treats and Toys<img src="images/dv8.png"></p>
+			</div></a>
+			<div class="d9">
+				<p>Treats and Toys<img src="images/dv9.png"></p>
+			</div>
+			<a href="horse.html"><div class="d10">
+				<p>Horse<img src="images/dv10.png"></p>
+			</div></a>
+			<a href="reptile.html"><div class="d11">
+				<p>Reptiles<img src="images/dv11.png"></p>
+			</div></a>
+			<a href="treatment.html"><div class="d12">
+				<p>Treatments<img src="images/dv13.png"></p>
+			</div></a>
+			
+
+
+
+
+
+              <img src="images/bg2.jpg" class="bg1">
+			<h1>Shop by Brands</h1>
+	        <div class="db1"><a href="foodsale.html">
+	        	<img src="images/pd1.png" class="items"></a>
+	            <p>Royal Canin</p>
+	         </div>
+	        <div class="db1"><a href="foodsale.html">
+	        	<img src="images/pd2.png" class="items"></a>
+	        <p >Royal Canin Veterinary</p>
+	         </div>
+	        <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd3.png" class="items"></a>
+            <p>Science Diet</p>
+              </div>
+            <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd4.png" class="items"></a>
+	        <p>Hills Science Diet</p>
+	          </div>
+	         <div class="db1"><a href="foodsale.html">	        
+	        <img src="images/pd5.png" class="items"></a>
+	        <p>Instinctive Bite</p>
+	          </div>
+	        <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd6.png" class="items"></a>
+	        <p>Advance</p>
+	          </div>
+	        <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd7.png" class="items"></a>
+	        <p>Ivory Coat</p>
+	          </div>
+	        <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd8.png"class="items"></a>
+	        <p>Simparica Trio</p>
+              </div>
+            <div class="db1"><a href="foodsale1.html">
+	        <img src="images/t1.png" class="items"></a>
+	        <p>Open Farm</p>
+	          </div>
+
+	         <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd9.png" class="items"></a>
+	        <p>KONG</p>
+	          </div>
+	          <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd10.png" class="items"></a>
+	        <p>Optimum</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd11.png" class="items"></a>
+	        <p>Breeders Choice</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd12.png" class="items"></a>
+	        <p>Supercoat</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd13.png" class="items"></a>
+	        <p>Greenies</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd18.png" class="items"></a>
+	        <p>Nature's Cuts</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd15.png" class="items"></a>
+	        <p>Fancy Feast</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd16.png" class="items"></a>
+	        <p>Dine</p>
+	          </div>
+	          <div class="db1"><a href="foodsale1.html">
+	        <img src="images/pd17.png" class="items"></a>
+	        <p>Paw</p>
+	          </div>
+	         <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd19.png" class="items"></a>
+	        <p>Spoon</p>
+	          </div>
+	          <div class="db1"><a href="foodsale.html">
+	        <img src="images/pd20.png" class="items"></a>
+	        <p>Hill Diet</p>
+	          </div>
+	        <div class="im1">
+	        	<img src="images/c1.jpg" >
+	        </div>
+
+	         <div class="div1">
+	         	<img src="images/c2.png" >
+	         	<h1>Australia's Largest Online Pet Shop</h1>
+	        	<p class="p1">Pet Circle is Australia's largest online pet shop. We want to create a world where pets and their families are healthy, happy and spend more time together. That's why we stock thousands of premium and natural brands dog food and cat food brands like Royal Canin, Advance, Hills Science Diet, Black Hawk and Instinctive Bite, and offer free, fast delivery. We also stock pet food to support health concerns and special needs, including vet prescription diets such as Royal Canin Veterinary Diets and Hill's Prescription Diet, along with flea, tick and worming treatments and other medications from Nexgard, Advocate, Sentinel, Bravecto, Comfortis and Revolution.</p>
+	        	<p>We aim to make buying pet supplies and pet food online easy and convenient. Over 500,000 Australian pet parents shop with us because of our free shipping in metro areas, our price match guarantee, honest and expert advice from our qualified customer service team, and fast, nationwide delivery direct to your door.
+                 </p >
+                 <p>We also carry a huge range of pet accessories - everything from dog beds, dog treats, dog collars, dog coats, dog toys, dog barking collars, cat litter, cat scratching posts, cat toys, to a variety of fish, reptile, bird, rabbit, and horse products! Pet Circle has the world's most trusted and recognised brands to help you nourish your pet's bodies and minds.</p>
+	        </div>
+	        <div class="end">
+	        	<h3>Get the best deal!</h3>
+	        	<p>Hear first about our exclusive offers and pet care advice.</p>
+	       <input type="text" name="name" placeholder="Enter your email address.......">
+	        	<button class="box">
+	        		Sign me up
+	        	</button>
+
+	        	 
+	              <footer>
+	              <div class="end1">
+	              	<div class="end2">
+	              		<ul>
+	              			<h4>COMPANY INFO</h4>
+	              			<li><a href="#">About Us</li></a>
+	              			<li><a href="#">Community</li></a>
+	              			<li><a href="#">Media</li></a>
+	              			<li><a href="#">Careers</li></a>
+	              			<li><a href="#">Security and Privacy</li></a>
+	              			<li><a href="#">Terms of use</li></a>
+	              		</ul> 
+	              	</div>
+	              	<div class="end2">
+	              		<ul>
+	              			<h4>HELP CENTRE</h4>
+	              			<li><a href="#">Contact Us</li></a>
+	              			<li><a href="#">Returns</li></a>
+	              			<li><a href="#">Best Price Guarantee</li></a>
+	              			<li><a href="#">Auto Delivery</li></a>
+	              			<li><a href="#">FAQ</li></a>
+	              		</ul> 
+	              	</div> 
+	              	<div class="end2">
+	              		<ul>
+	              			<h4>OUR PARTNERS</h4>
+	              			<li><a href="#">ServiceSeeking.com.au</li></a> 
+	              			<li><a href="#">Cracka Wines</li></a>
+	              			<li><a href="#">Showpo</li></a>
+	              			<li><a href="#">Harris Farm Markets</li></a>
+	              			<li><a href="#">Coco Republic</li></a>
+	              			<li><a href="#">Appliances Online</li></a>
+	              		</ul> 
+	              	</div> 
+	              	<div class="end2">
+	              		<ul>
+	              			<h4>Customer Service</h4>
+	              			<li><a href="#">AVAILABLE 7 DAYS</li></a>
+	              			<li><a href="#">CONTACT US</li></a>
+	              			<li><a href="#">SALES@PETCIRCLE.COM.AU</li></a>
+	              		</ul> 
+	              		<div class="endi">
+	              			<img src="images/a1.png">
+	              			<img src="images/a2.png">
+	              			<img src="images/a3.png">
+	              			<img src="images/a4.png">
+	              		</div>
+	              	</div>   	
+	             </div>
+	         </footer>
+	     </div >
+</body>
+</html>  
